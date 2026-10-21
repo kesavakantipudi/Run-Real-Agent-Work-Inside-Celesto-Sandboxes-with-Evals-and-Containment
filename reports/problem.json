@@ -1,0 +1,6 @@
+{
+  "who": "Autonomous software engineering teams deploying untrusted coding agents to build and verify software in production environments.",
+  "agent_work": "Clones untrusted code repositories, writes comprehensive reproduction test fixtures, refactors implementations, and compiles verified execution receipts.",
+  "proof_output": "Cryptographic execution receipt artifact and reproducible pytest verification suite with full isolation audit trail.",
+  "idea_source": "idea_bank"
+}

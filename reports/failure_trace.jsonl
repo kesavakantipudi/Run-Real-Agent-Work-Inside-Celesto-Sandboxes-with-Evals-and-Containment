@@ -1,0 +1,24 @@
+{"ts": "2026-10-21T08:39:40.230334+00:00", "sandbox_name": "sbx-failrec01", "step": 0, "event": "sandbox_boot", "details": "Sandbox sbx-failrec01 booted to ready"}
+{"ts": "2026-10-21T08:39:40.230349+00:00", "sandbox_name": "sbx-failrec01", "step": 1, "event": "step_start", "details": "Initialize isolated workspace directory in guest"}
+{"ts": "2026-10-21T08:39:40.230960+00:00", "sandbox_name": "sbx-failrec01", "step": 1, "event": "step_completed", "details": "Step 1 completed successfully"}
+{"ts": "2026-10-21T08:39:40.230969+00:00", "sandbox_name": "sbx-failrec01", "step": 2, "event": "step_start", "details": "Inspect guest environment and dependencies"}
+{"ts": "2026-10-21T08:39:40.231498+00:00", "sandbox_name": "sbx-failrec01", "step": 2, "event": "step_completed", "details": "Step 2 completed successfully"}
+{"ts": "2026-10-21T08:39:40.231505+00:00", "sandbox_name": "sbx-failrec01", "step": 3, "event": "step_start", "details": "Write problem specification file"}
+{"ts": "2026-10-21T08:39:40.232335+00:00", "sandbox_name": "sbx-failrec01", "step": 3, "event": "step_completed", "details": "Step 3 completed successfully"}
+{"ts": "2026-10-21T08:39:40.232347+00:00", "sandbox_name": "sbx-failrec01", "step": 4, "event": "step_start", "details": "Write unit tests for specification"}
+{"ts": "2026-10-21T08:39:40.233274+00:00", "sandbox_name": "sbx-failrec01", "step": 4, "event": "step_completed", "details": "Step 4 completed successfully"}
+{"ts": "2026-10-21T08:39:40.233284+00:00", "sandbox_name": "sbx-failrec01", "step": 5, "event": "step_start", "details": "Run static type and lint checks"}
+{"ts": "2026-10-21T08:39:40.233781+00:00", "sandbox_name": "sbx-failrec01", "step": 5, "event": "step_completed", "details": "Step 5 completed successfully"}
+{"ts": "2026-10-21T08:39:40.233789+00:00", "sandbox_name": "sbx-failrec01", "step": 6, "event": "step_start", "details": "Checkpoint sandbox state with snapshot prior to risky step"}
+{"ts": "2026-10-21T08:39:40.233797+00:00", "sandbox_name": "sbx-failrec01", "step": 6, "event": "snapshot_created", "details": "Snapshot snap-pre-step7 saved"}
+{"ts": "2026-10-21T08:39:40.233800+00:00", "sandbox_name": "sbx-failrec01", "step": 7, "event": "step_start", "details": "Execute complex integration tests (designated failure point)"}
+{"ts": "2026-10-21T08:39:40.233802+00:00", "sandbox_name": "sbx-failrec01", "step": 7, "event": "step_failed", "details": "Simulated execution error at step 7: integration test crashed"}
+{"ts": "2026-10-21T08:39:40.233804+00:00", "sandbox_name": "sbx-failrec01", "step": 7, "event": "policy_applied", "details": "Applying recovery policy: rollback", "policy": "rollback"}
+{"ts": "2026-10-21T08:39:40.233808+00:00", "sandbox_name": "sbx-failrec01", "step": 7, "event": "state_restored", "details": "Rolled back to snapshot snap-pre-step7"}
+{"ts": "2026-10-21T08:39:40.234229+00:00", "sandbox_name": "sbx-failrec01", "step": 8, "event": "step_start", "details": "Refactor solution based on verified diagnostics"}
+{"ts": "2026-10-21T08:39:40.234652+00:00", "sandbox_name": "sbx-failrec01", "step": 8, "event": "step_completed", "details": "Step 8 completed successfully"}
+{"ts": "2026-10-21T08:39:40.234659+00:00", "sandbox_name": "sbx-failrec01", "step": 9, "event": "step_start", "details": "Run full regression test suite in clean snapshot"}
+{"ts": "2026-10-21T08:39:40.235110+00:00", "sandbox_name": "sbx-failrec01", "step": 9, "event": "step_completed", "details": "Step 9 completed successfully"}
+{"ts": "2026-10-21T08:39:40.235116+00:00", "sandbox_name": "sbx-failrec01", "step": 10, "event": "step_start", "details": "Generate cryptographic artifact receipt and finalize"}
+{"ts": "2026-10-21T08:39:40.235529+00:00", "sandbox_name": "sbx-failrec01", "step": 10, "event": "step_completed", "details": "Step 10 completed successfully"}
+{"ts": "2026-10-21T08:39:40.235538+00:00", "sandbox_name": "sbx-failrec01", "step": 10, "event": "sandbox_cleanup", "details": "Sandbox cleaned up, state=deleted"}

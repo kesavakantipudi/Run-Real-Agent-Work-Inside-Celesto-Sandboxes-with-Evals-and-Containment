@@ -1,0 +1,7 @@
+{
+  "failed_step": 7,
+  "total_steps": 10,
+  "policy": "rollback",
+  "rationale": "When a complex integration test or risky refactoring operation fails at step 7 of 10, rolling back to a pre-step snapshot restores pristine state instantly without losing prior configuration or incurring the steep overhead of cold-booting a fresh VM.",
+  "trace_path": "reports/failure_trace.jsonl"
+}

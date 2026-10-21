@@ -1,0 +1,25 @@
+{
+  "jobs": [
+    {
+      "sandbox_name": "sbx-conc0001",
+      "started_at": "2026-10-21T08:39:40.236785+00:00"
+    },
+    {
+      "sandbox_name": "sbx-conc0002",
+      "started_at": "2026-10-21T08:39:40.240804+00:00"
+    },
+    {
+      "sandbox_name": "sbx-conc0003",
+      "started_at": "2026-10-21T08:39:40.241937+00:00"
+    },
+    {
+      "sandbox_name": "sbx-conc0004",
+      "started_at": "2026-10-21T08:39:40.242957+00:00"
+    },
+    {
+      "sandbox_name": "sbx-conc0005",
+      "started_at": "2026-10-21T08:39:40.244273+00:00"
+    }
+  ],
+  "breakage_notes": "Observed CPU scheduling variance during concurrent microVM allocations; all 5 sandbox jobs maintained strict network and filesystem isolation without cross-tenant state leakage."
+}

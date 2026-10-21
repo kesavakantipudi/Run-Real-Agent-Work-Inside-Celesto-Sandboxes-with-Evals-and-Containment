@@ -1,0 +1,14 @@
+{
+  "capabilities": [
+    {
+      "id": "safety_hooks",
+      "why": "Intercepts and blocks dangerous exfiltration patterns, destructive recursive removals, and credential leakage attempts before commands reach the guest microVM.",
+      "evidence_path": "app/sandbox/manager.py"
+    },
+    {
+      "id": "snapshots",
+      "why": "Enables zero-latency full filesystem and process state checkpoints prior to risky execution steps, allowing instantaneous rollback upon mid-task failures.",
+      "evidence_path": "app/agent/workflow.py"
+    }
+  ]
+}
