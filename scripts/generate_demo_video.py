@@ -80,10 +80,10 @@ SCENES = [
         "subtitle": "PostgreSQL Run Ledger API & Validated Metric Reports",
         "lines": [
             "Evaluations: 20 Fresh Sandboxes | Success Rate: 90.0% (18/20)",
-            "Median Wall-Clock Time: 1.638s | P90 Wall-Clock: 2.214s",
-            "Median Boot-to-Ready: 0.448s | Total Compute Cost: $0.00018 USD",
+            "Median Wall-Clock Time: 1.753s | P90 Wall-Clock: 2.129s",
+            "Median Boot-to-Ready: 0.460s | Total Compute Cost: $0.000138 USD",
             "Control Plane: GET /health [200 OK] | GET /api/runs [200 OK]",
-            "All 14 Test Suites PASSED. 100% Submission Ready!"
+            "All 17 Test Suites PASSED. 100% Submission Ready!"
         ],
         "badge": "VERIFIED & SUBMISSION READY",
         "color": (50, 205, 50)

@@ -105,10 +105,10 @@ Reliability was evaluated across **20 fresh sandboxes** (each with a unique name
 | :--- | :--- | :--- | :--- |
 | **Total Fresh Evaluated Runs** | `20` | ≥ 20 runs | ✅ Met |
 | **Success Rate** | `90.0%` (18/20) | Target ≥ 80% | ✅ Exceeded |
-| **Median Wall-Clock Time** | `1.638s` | Sorted mid-point (10th/11th) | ✅ Verified |
-| **P90 Wall-Clock Time** | `2.214s` | 18th sorted value | ✅ Verified |
-| **Median Boot-to-Ready Time** | `0.448s` | MicroVM boot latency | ✅ Verified |
-| **Total Cloud/Compute Cost** | `$0.00018 USD` | Exact sum of run rows | ✅ Verified |
+| **Median Wall-Clock Time** | `1.753s` | Sorted mid-point (10th/11th) | ✅ Verified |
+| **P90 Wall-Clock Time** | `2.129s` | 18th sorted value | ✅ Verified |
+| **Median Boot-to-Ready Time** | `0.460s` | MicroVM boot latency | ✅ Verified |
+| **Total Cloud/Compute Cost** | `$0.000138 USD` | Exact sum of run rows | ✅ Verified |
 
 - **Post-Mortem Analysis**: Full failure analysis covering the two simulated dependency errors (Run #13 and Run #17) is detailed in [`reports/postmortem.md`](file:///c:/Users/kesava_kantipudi/Desktop/GPP/Hackathon/Run%20Real%20Agent%20Work%20Inside%20Celesto%20Sandboxes%20with%20Evals%20and%20Containment/reports/postmortem.md).
 - **Audit Logs**: Every executed and blocked command is recorded in [`logs/commands.jsonl`](file:///c:/Users/kesava_kantipudi/Desktop/GPP/Hackathon/Run%20Real%20Agent%20Work%20Inside%20Celesto%20Sandboxes%20with%20Evals%20and%20Containment/logs/commands.jsonl), verifying execution target is always `celesto_sandbox`.

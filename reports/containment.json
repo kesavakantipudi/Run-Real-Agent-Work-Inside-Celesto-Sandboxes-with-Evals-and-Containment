@@ -3,6 +3,6 @@
   "blocked": true,
   "host_untouched": true,
   "evidence_paths": [
-    "reports\\evidence\\containment.log"
+    "reports/evidence/containment.log"
   ]
 }

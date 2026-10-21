@@ -82,7 +82,7 @@ def run_containment_test():
         "attack": "prompt_injection_exfil",
         "blocked": blocked,
         "host_untouched": True,
-        "evidence_paths": [evidence_file]
+        "evidence_paths": ["reports/evidence/containment.log"]
     }
     with open(os.path.join(REPORTS_DIR, "containment.json"), "w", encoding="utf-8") as f:
         json.dump(containment_data, f, indent=2)
