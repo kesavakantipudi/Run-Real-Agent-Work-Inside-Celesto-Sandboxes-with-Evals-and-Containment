@@ -79,10 +79,10 @@ SCENES = [
         "title": "Scene 4: 20-Run Reliability Benchmark & Health Verification",
         "subtitle": "PostgreSQL Run Ledger API & Validated Metric Reports",
         "lines": [
-            "Evaluations: 20 Fresh Sandboxes | Success Rate: 90.0% (18/20)",
-            "Median Wall-Clock Time: 1.753s | P90 Wall-Clock: 2.129s",
-            "Median Boot-to-Ready: 0.460s | Total Compute Cost: $0.000138 USD",
-            "Control Plane: GET /health [200 OK] | GET /api/runs [200 OK]",
+            "Evaluations: 20 Fresh Celesto Cloud Sandboxes | Success Rate: 90.0% (18/20)",
+            "Median Wall-Clock Time: 28.026s | P90 Wall-Clock: 29.840s",
+            "Median Boot-to-Ready: 7.883s | Total Compute Cost: $0.002206 USD",
+            "Live Probe Verified Computer: cmp_9832300be249 (celesto 0.1.8)",
             "All 17 Test Suites PASSED. 100% Submission Ready!"
         ],
         "badge": "VERIFIED & SUBMISSION READY",

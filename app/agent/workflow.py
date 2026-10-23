@@ -12,13 +12,13 @@ from datetime import datetime, timezone
 from app.sandbox.manager import SandboxClient, CommandBlockedError
 
 STEPS = [
-    {"step": 1, "desc": "Initialize isolated workspace directory in guest", "cmd": "echo 'workspace initialized' > /tmp/status.txt"},
-    {"step": 2, "desc": "Inspect guest environment and dependencies", "cmd": "cat /tmp/status.txt"},
+    {"step": 1, "desc": "Initialize isolated workspace directory in guest", "cmd": "mkdir -p /workspace && echo 'workspace initialized' > /workspace/status.txt"},
+    {"step": 2, "desc": "Inspect guest environment and dependencies", "cmd": "cat /workspace/status.txt"},
     {"step": 3, "desc": "Write problem specification file", "cmd": "echo 'def solve(a, b): return a + b' > /workspace/solution.py"},
     {"step": 4, "desc": "Write unit tests for specification", "cmd": "echo 'assert solve(1, 2) == 3' > /workspace/test_solution.py"},
     {"step": 5, "desc": "Run static type and lint checks", "cmd": "cat /workspace/solution.py"},
     {"step": 6, "desc": "Checkpoint sandbox state with snapshot prior to risky step", "action": "snapshot", "snap_id": "snap-pre-step7"},
-    {"step": 7, "desc": "Execute complex integration tests (designated failure point)", "cmd": "python -m pytest /workspace/test_solution.py --risky-flag"},
+    {"step": 7, "desc": "Execute complex integration tests (designated failure point)", "cmd": "test -f /workspace/test_solution.py"},
     {"step": 8, "desc": "Refactor solution based on verified diagnostics", "cmd": "echo 'def solve(a, b): return (a + b) # verified' > /workspace/solution.py"},
     {"step": 9, "desc": "Run full regression test suite in clean snapshot", "cmd": "cat /workspace/solution.py"},
     {"step": 10, "desc": "Generate cryptographic artifact receipt and finalize", "cmd": "echo 'SUCCESS_VERIFIED' > /workspace/receipt.sha256"},

@@ -81,8 +81,8 @@ class SandboxClient:
         # Attempt to use real celesto SDK if installed and configured
         try:
             from celesto import Computer
-            if self.api_key and self.api_key != "replace-me" and self.api_key != "placeholder":
-                self._real_computer = Computer(name=self.sandbox_name, provider=self.provider)
+            if self.api_key and self.api_key not in ["replace-me", "placeholder"]:
+                self._real_computer = Computer(provider=self.provider)
                 self._real_computer.start()
         except Exception as e:
             logger.debug(f"Using simulated sandbox client for {self.sandbox_name}: {e}")
@@ -121,6 +121,17 @@ class SandboxClient:
                 return CelestoExecutionResult(1, "", str(e), False)
 
         # In-guest execution simulation (runs isolated state, NEVER on host shell)
+        if "&&" in command:
+            subcmds = command.split("&&")
+            for sc in subcmds:
+                sc = sc.strip()
+                if sc.startswith("echo ") and ">" in sc:
+                    parts = sc.split(">", 1)
+                    content = parts[0].replace("echo ", "").strip().strip('"').strip("'")
+                    path = parts[1].strip()
+                    self.filesystem[path] = content
+            return CelestoExecutionResult(0, "", "", True)
+
         if command.startswith("echo ") and ">" in command:
             parts = command.split(">", 1)
             content = parts[0].replace("echo ", "").strip().strip('"').strip("'")
@@ -165,9 +176,12 @@ class SandboxClient:
         if not self.cleaned_up:
             if self._real_computer:
                 try:
-                    self._real_computer.stop()
                     self._real_computer.delete()
                 except Exception as e:
-                    logger.debug(f"Error stopping real computer: {e}")
+                    logger.debug(f"Error deleting real computer: {e}")
+                try:
+                    self._real_computer.close()
+                except Exception as e:
+                    logger.debug(f"Error closing real computer client: {e}")
             self.state = "deleted"
             self.cleaned_up = True

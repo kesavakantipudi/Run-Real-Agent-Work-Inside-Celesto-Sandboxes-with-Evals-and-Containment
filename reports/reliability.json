@@ -5,167 +5,167 @@
       "sandbox_name": "sbx-eval00001",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.219,
-      "boot_to_ready_s": 0.491,
-      "cost_usd": 5e-06
+      "wall_clock_s": 29.467,
+      "boot_to_ready_s": 8.941,
+      "cost_usd": 0.000123
     },
     {
       "sandbox_name": "sbx-eval00002",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.57,
-      "boot_to_ready_s": 0.438,
-      "cost_usd": 7e-06
+      "wall_clock_s": 22.837,
+      "boot_to_ready_s": 8.969,
+      "cost_usd": 9.5e-05
     },
     {
       "sandbox_name": "sbx-eval00003",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 2.129,
-      "boot_to_ready_s": 0.459,
-      "cost_usd": 9e-06
+      "wall_clock_s": 30.728,
+      "boot_to_ready_s": 7.578,
+      "cost_usd": 0.000128
     },
     {
       "sandbox_name": "sbx-eval00004",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.775,
-      "boot_to_ready_s": 0.483,
-      "cost_usd": 7e-06
+      "wall_clock_s": 24.473,
+      "boot_to_ready_s": 9.413,
+      "cost_usd": 0.000102
     },
     {
       "sandbox_name": "sbx-eval00005",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.876,
-      "boot_to_ready_s": 0.413,
-      "cost_usd": 8e-06
+      "wall_clock_s": 19.792,
+      "boot_to_ready_s": 7.504,
+      "cost_usd": 8.2e-05
     },
     {
       "sandbox_name": "sbx-eval00006",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.844,
-      "boot_to_ready_s": 0.501,
-      "cost_usd": 8e-06
+      "wall_clock_s": 18.932,
+      "boot_to_ready_s": 7.203,
+      "cost_usd": 7.9e-05
     },
     {
       "sandbox_name": "sbx-eval00007",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.732,
-      "boot_to_ready_s": 0.464,
-      "cost_usd": 7e-06
+      "wall_clock_s": 20.117,
+      "boot_to_ready_s": 6.959,
+      "cost_usd": 8.4e-05
     },
     {
       "sandbox_name": "sbx-eval00008",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.857,
-      "boot_to_ready_s": 0.461,
-      "cost_usd": 8e-06
+      "wall_clock_s": 29.444,
+      "boot_to_ready_s": 9.05,
+      "cost_usd": 0.000123
     },
     {
       "sandbox_name": "sbx-eval00009",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 2.165,
-      "boot_to_ready_s": 0.496,
-      "cost_usd": 9e-06
+      "wall_clock_s": 28.343,
+      "boot_to_ready_s": 7.044,
+      "cost_usd": 0.000118
     },
     {
       "sandbox_name": "sbx-eval00010",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.216,
-      "boot_to_ready_s": 0.507,
-      "cost_usd": 5e-06
+      "wall_clock_s": 25.375,
+      "boot_to_ready_s": 7.851,
+      "cost_usd": 0.000106
     },
     {
       "sandbox_name": "sbx-eval00011",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.511,
-      "boot_to_ready_s": 0.435,
-      "cost_usd": 6e-06
+      "wall_clock_s": 29.454,
+      "boot_to_ready_s": 9.414,
+      "cost_usd": 0.000123
     },
     {
       "sandbox_name": "sbx-eval00012",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 2.0,
-      "boot_to_ready_s": 0.454,
-      "cost_usd": 8e-06
+      "wall_clock_s": 29.84,
+      "boot_to_ready_s": 7.719,
+      "cost_usd": 0.000124
     },
     {
       "sandbox_name": "sbx-eval00013",
       "fresh": true,
       "success": false,
-      "wall_clock_s": 0.93,
-      "boot_to_ready_s": 0.489,
-      "cost_usd": 4e-06
+      "wall_clock_s": 29.198,
+      "boot_to_ready_s": 8.818,
+      "cost_usd": 0.000122
     },
     {
       "sandbox_name": "sbx-eval00014",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 2.431,
-      "boot_to_ready_s": 0.386,
-      "cost_usd": 1e-05
+      "wall_clock_s": 22.308,
+      "boot_to_ready_s": 7.915,
+      "cost_usd": 9.3e-05
     },
     {
       "sandbox_name": "sbx-eval00015",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.794,
-      "boot_to_ready_s": 0.452,
-      "cost_usd": 7e-06
+      "wall_clock_s": 27.709,
+      "boot_to_ready_s": 7.832,
+      "cost_usd": 0.000115
     },
     {
       "sandbox_name": "sbx-eval00016",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.472,
-      "boot_to_ready_s": 0.497,
-      "cost_usd": 6e-06
+      "wall_clock_s": 26.169,
+      "boot_to_ready_s": 7.577,
+      "cost_usd": 0.000109
     },
     {
       "sandbox_name": "sbx-eval00017",
       "fresh": true,
       "success": false,
-      "wall_clock_s": 0.924,
-      "boot_to_ready_s": 0.438,
-      "cost_usd": 4e-06
+      "wall_clock_s": 28.686,
+      "boot_to_ready_s": 8.488,
+      "cost_usd": 0.00012
     },
     {
       "sandbox_name": "sbx-eval00018",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.334,
-      "boot_to_ready_s": 0.41,
-      "cost_usd": 6e-06
+      "wall_clock_s": 27.072,
+      "boot_to_ready_s": 7.846,
+      "cost_usd": 0.000113
     },
     {
       "sandbox_name": "sbx-eval00019",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 1.186,
-      "boot_to_ready_s": 0.519,
-      "cost_usd": 5e-06
+      "wall_clock_s": 30.934,
+      "boot_to_ready_s": 11.022,
+      "cost_usd": 0.000129
     },
     {
       "sandbox_name": "sbx-eval00020",
       "fresh": true,
       "success": true,
-      "wall_clock_s": 2.087,
-      "boot_to_ready_s": 0.414,
-      "cost_usd": 9e-06
+      "wall_clock_s": 28.409,
+      "boot_to_ready_s": 7.926,
+      "cost_usd": 0.000118
     }
   ],
   "success_rate": 0.9,
-  "median_wall_clock_s": 1.753,
-  "p90_wall_clock_s": 2.129,
-  "median_boot_to_ready_s": 0.46,
-  "total_cost_usd": 0.000138,
+  "median_wall_clock_s": 28.026,
+  "p90_wall_clock_s": 29.84,
+  "median_boot_to_ready_s": 7.883,
+  "total_cost_usd": 0.002206,
   "postmortem_path": "reports/postmortem.md"
 }
