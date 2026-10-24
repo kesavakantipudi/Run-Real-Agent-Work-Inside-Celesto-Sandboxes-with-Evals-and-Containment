@@ -124,8 +124,8 @@ We evaluated 5 concurrent sandbox jobs (`sbx-conc0001` through `sbx-conc0005`). 
 
 ## Walkthrough Demo Video
 
-A 25-second walkthrough video demonstrating guest microVM execution, containment interception, step-7 rollback, and PostgreSQL run ledger recording is available in the repository at:
-- [`demo/walkthrough.mp4`](file:///c:/Users/kesava_kantipudi/Desktop/GPP/Hackathon/Run%20Real%20Agent%20Work%20Inside%20Celesto%20Sandboxes%20with%20Evals%20and%20Containment/demo/walkthrough.mp4) (Length: 25.0s, MP4 format)
+A genuine screen recording demonstrating the live Windows Terminal session, Celesto Cloud microVM guest execution, containment interception, step-7 rollback, and PostgreSQL run ledger recording is available in the repository at:
+- [`demo/walkthrough.mp4`](file:///c:/Users/kesava_kantipudi/Desktop/GPP/Hackathon/Run%20Real%20Agent%20Work%20Inside%20Celesto%20Sandboxes%20with%20Evals%20and%20Containment/demo/walkthrough.mp4) (Length: 1m 57s, 1440x900 MP4 format)
 
 ---
 
@@ -170,7 +170,7 @@ Both `ledger` (Postgres) and `api` (FastAPI) will start with automated health ch
 ```bash
 pytest tests/
 ```
-All 14 automated test suites (API contract tests and report schema/arithmetic tests) will run and pass.
+All 17 automated test suites (API contract tests and report schema/arithmetic tests) will run and pass.
 
 ---
 
