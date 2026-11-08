@@ -2,7 +2,10 @@ import re
 from pydantic import BaseModel, field_validator
 from typing import Optional
 
-ALLOWED_STATES = {"created", "ready", "running", "succeeded", "failed", "deleted"}
+ALLOWED_STATES = {
+    "created", "ready", "running", "succeeded", "completed", "failed", "deleted",
+    "checkpointed", "rolled_back"
+}
 SANDBOX_NAME_REGEX = re.compile(r"^sbx-[a-z0-9]{8,}$")
 
 class RunCreate(BaseModel):
@@ -41,3 +44,10 @@ class RunResponse(BaseModel):
     execution_target: str
     created_at: Optional[str] = None
     updated_at: Optional[str] = None
+
+class AgentRunRequest(BaseModel):
+    sandbox_name: Optional[str] = "sbx-agent001"
+    prompt: Optional[str] = "Solve specification, generate tests, and verify in Celesto sandbox"
+    simulate_step7_failure: bool = True
+    recovery_policy: str = "rollback"
+    api_key: Optional[str] = None

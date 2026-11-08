@@ -63,3 +63,17 @@ def test_post_runs_invalid_state():
     }
     response = client.post("/api/runs", json=payload)
     assert response.status_code == 422 or response.status_code == 400
+
+def test_agent_run_endpoint():
+    payload = {
+        "sandbox_name": "sbx-agenttest01",
+        "prompt": "Test Gemini autonomous agent loop",
+        "simulate_step7_failure": True,
+        "recovery_policy": "rollback"
+    }
+    response = client.post("/api/agent/run", json=payload)
+    assert response.status_code == 200
+    data = response.json()
+    assert data["sandbox_name"] == "sbx-agenttest01"
+    assert data["success"] is True
+    assert len(data["traces"]) >= 10

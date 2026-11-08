@@ -31,7 +31,7 @@ services:
       CELESTO_PROVIDER: cloud
       CELESTO_API_KEY: placeholder
       LLM_API_KEY: placeholder
-      LLM_MODEL: gpt-4o-mini
+      LLM_MODEL: gemini-2.5-flash-lite
     depends_on:
       ledger:
         condition: service_healthy

@@ -32,7 +32,22 @@ def run_demo_orchestration():
     if os.path.exists("stop_recording.flag"):
         os.remove("stop_recording.flag")
         
-    hwnd_terminal = 198538
+    # Locate terminal window dynamically, falling back to foreground window
+    hwnd_terminal = None
+    def enum_cb(h, _):
+        nonlocal hwnd_terminal
+        if win32gui.IsWindowVisible(h):
+            txt = win32gui.GetWindowText(h).lower()
+            cls = win32gui.GetClassName(h).lower()
+            if any(term in txt for term in ["powershell", "cmd", "terminal", "bash", "celesto"]) or "console" in cls:
+                if hwnd_terminal is None:
+                    hwnd_terminal = h
+    try:
+        win32gui.EnumWindows(enum_cb, None)
+    except Exception:
+        pass
+    if not hwnd_terminal:
+        hwnd_terminal = win32gui.GetForegroundWindow()
     
     # 2 seconds warm-up
     time.sleep(2)

@@ -1,9 +1,33 @@
+# Python bytecode and caches
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
 .pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Environment files and credentials
 .env
+.env.local
+
+# Virtual environments
 venv/
 .venv/
+env/
+ENV/
+
+# Operating system artifacts
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
 *.log
+
+# Editor and IDE directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
